@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Asul:700|Chivo');
+
+body {
+    font-family: chivo;
+    font-size: 25px;
+    line-height: 1.5;
+    background-color: #fffae2;
+    color: #221204;
+}
+h2{
+    font-family: Asul;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 0.6em 0;
+}
+p{
+    margin: 1.6em 0 1.6em 0;
+}
+header {
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+section:nth-child(odd){
+    flex-direction: row-reverse;
+}
+section div.text {
+    padding: 60px;
+}
+section div.image {
+    height: 100vh;
+    background-image: url(../images/image-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+div{
+    width: 50%;
+}
+@media (max-width: 800px) {
+    body{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 32px;
+    }
+}
